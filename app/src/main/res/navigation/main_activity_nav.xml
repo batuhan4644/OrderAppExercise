@@ -12,10 +12,17 @@
         <action
             android:id="@+id/siparisEkraninaGecis"
             app:destination="@id/siparisEkraniFragment2" />
+
+
     </fragment>
     <fragment
         android:id="@+id/siparisEkraniFragment2"
         android:name="com.example.orderappexercise.SiparisEkraniFragment"
         android:label="fragment_siparis_ekrani"
         tools:layout="@layout/fragment_siparis_ekrani" />
+    <argument
+        android:name="userID"
+        app:argType="string"
+        app:nullable="false"
+        />
 </navigation>

@@ -1,5 +1,6 @@
 package com.example.orderappexercise
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.os.PatternMatcher
@@ -12,10 +13,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.webkit.RenderProcessGoneDetail
+import android.widget.EditText
 import android.widget.Toast
 import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_kayit_ol.*
 import kotlinx.android.synthetic.main.fragment_kayit_ol.view.*
+
 
 
 class KayitOlFragment : Fragment() {
@@ -44,16 +48,12 @@ class KayitOlFragment : Fragment() {
          Toast.makeText(activity, "Lütfen mail adresini kontrol et.", Toast.LENGTH_LONG).show()
      }
 
-
  }
-
  return tasarim
-
 }
-
-
 
 private fun String.isValidEmail() =
     !TextUtils.isEmpty(this) && Patterns.EMAIL_ADDRESS.matcher(this).matches()
+
 
 }

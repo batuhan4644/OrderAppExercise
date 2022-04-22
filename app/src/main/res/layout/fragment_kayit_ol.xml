@@ -84,7 +84,7 @@
         android:ems="10"
         android:hapticFeedbackEnabled="false"
         android:hint="  Şifre"
-        android:inputType="textNoSuggestions"
+        android:inputType="textPassword"
         android:maxLines="1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
