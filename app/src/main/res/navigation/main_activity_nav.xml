@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/kayitOlFragment2">
+    <fragment
+        android:id="@+id/kayitOlFragment2"
+        android:name="com.example.orderappexercise.KayitOlFragment"
+        android:label="fragment_kayit_ol"
+        tools:layout="@layout/fragment_kayit_ol" >
+        <action
+            android:id="@+id/siparisEkraninaGecis"
+            app:destination="@id/siparisEkraniFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/siparisEkraniFragment2"
+        android:name="com.example.orderappexercise.SiparisEkraniFragment"
+        android:label="fragment_siparis_ekrani"
+        tools:layout="@layout/fragment_siparis_ekrani" />
+</navigation>
